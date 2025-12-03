@@ -50,6 +50,11 @@
     6rem
   ); /* 48px → 96px (section padding) */
 
+  /* ===== TYPOGRAPHY ===== */
+  --font-sans: "Raleway", sans-serif;
+  --font-serif: "Noto Serif", serif;
+  --font-mono: "Roboto", monospace;
+
   /*
 	 * COLOR PALETTE
 	 *
