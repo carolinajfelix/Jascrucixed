@@ -4,81 +4,279 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <script src="main.js" defer></script>
   </head>
   <body>
-    <p>Hello World! :D</p>
-  </body>
-  --- layout: default title: 'Lessons' lang: en permalink: /lessons/en/ ---
+    <body>
+      <div class="hero">
+        <div>
+          <h1>Jasmine Zoe</h1>
+          <p>Graphic Designer<br />Ilustrator</p>
+          <div class="scroll-indicator">
+            ↓ Scroll down to check my artwork! ↓
+          </div>
+        </div>
+      </div>
 
-  <div class="max-w-6xl mx-auto px-4 py-8 relative min-h-screen">
-    <div
-      class="absolute inset-0 -z-10 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-neutral-950 dark:via-neutral-900 dark:to-neutral-950"
-    ></div>
-    <header class="mb-12 text-center relative">
-      <h1
-        class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-neutral-100 mb-4"
-      >
-        Lessons
-      </h1>
-      <p class="text-lg text-slate-600 dark:text-neutral-400 max-w-2xl mx-auto">
-        Complete pedagogical content with focus on accessibility, responsive
-        design, and ethical development
-      </p>
-    </header>
+      <div class="story-section chapter-1" data-observe="">
+        <div class="story-content">
+          <h2>Artwork</h2>
+          <p style="font-size: 1.2rem; line-height: 1.8">
+            In this section you can see where I have been designing and my
+            career so far.
+          </p>
 
-    {% assign locale = page.lang | default: "en" %}
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-      {% for item in site.data.lessons %} {% assign t = item.title[locale] |
-      default: item.title.en %} {% assign p = item.path[locale] %} {% if p %} {%
-      if t == blank %} {% assign t = item.title.en | default: item.title.es %}
-      {% endif %} {% if t %}
-      <a
-        href="{{ p | relative_url }}"
-        class="group relative flex flex-col backdrop-blur-lg bg-white/80 dark:bg-neutral-900/80 border border-white/30 dark:border-neutral-800/50 rounded-xl p-4 hover:bg-white/90 dark:hover:bg-neutral-900/90 hover:border-blue-400/60 dark:hover:border-blue-600/60 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/30 transition-all duration-300 hover:-translate-y-1 min-h-[100px]"
-      >
-        <h2
-          class="text-sm font-semibold text-slate-900 dark:text-neutral-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-2 flex-1 overflow-hidden"
-          style="
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            line-height: 1.4;
-          "
-        >
-          {{ t }}
-        </h2>
-        <span
-          class="inline-flex items-center text-xs text-slate-500 dark:text-neutral-500 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mt-auto"
-        >
-          Read
-          <svg
-            class="w-3 h-3 ml-1 group-hover:translate-x-0.5 transition-transform"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
+          <div class="container">
+            <div class="glass-card">
+              <h2>Audiovisual Design and Ilustration (UDIT)</h2>
+              <p>
+                UDIT is the spanish University of Information, Design and
+                Technology where I am currently studying an audiovisuals, design
+                and ilustration career. I started my studies there in September
+                2024 and I'm doing proyects there until now.
+              </p>
+              <button class="glass-button">Go check them out!</button>
+            </div>
+
+            <div class="glass-card glass-card-dark">
+              <h2>Graphic Design Work (PUCP)</h2>
+              <p>
+                PUCP is the #1 university in Perú where I studied Graphic Design
+                for 4 years since March 2021. During this time, I worked on
+                various projects that honed my skills in designing and
+                ilustrating before moving to Spain.
+              </p>
+
+              <button class="glass-button">Go check them out!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-section">
+        <div class="parallax-content">
+          <h3>My Design Journey so far</h3>
+          <p style="font-size: 1.1rem">
+            Information revealed step by step is easier to digest
+          </p>
+        </div>
+      </div>
+
+      <div class="story-section chapter-2" data-observe="">
+        <div class="story-content">
+          <h2>I work with</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 2rem">
+            Scrollytelling uses several techniques to create engaging
+            experiences:
+          </p>
+
+          <div class="interactive-cards">
+            <div class="card">
+              <h4></h4>
+              <p>
+                Elements appear as they enter the viewport, creating a sense of
+                discovery.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Parallax</h4>
+              <p>
+                Different layers move at different speeds, creating depth and
+                dimension.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Triggered Animations</h4>
+              <p>Actions occur when users reach specific scroll positions.</p>
+            </div>
+          </div>
+
+          <p style="margin-top: 2rem">
+            These techniques work together to create a cohesive narrative flow.
+          </p>
+        </div>
+      </div>
+
+      <div class="story-section chapter-1" data-observe="">
+        <div class="story-content">
+          <h2>Design Journey Timeline</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 2rem">
+            Perfect for showing process, history, or journey:
+          </p>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>International Baccalaureate (2019-2020)</h4>
+                <p>
+                  My school had an IB program by the end of 2018 and it last
+                  until now. By the time of 2019 until 2020 I have been learning
+                  how to use some Microsoft applications and Adobe applications
+                  and also the principles of programming.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>Step 2: Design</h4>
+                <p>
+                  Create visual assets and determine animation triggers for each
+                  section.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>Step 3: Implement</h4>
+                <p>
+                  Use Intersection Observer API or libraries like ScrollReveal
+                  to bring it to life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-section chapter-3" data-observe="">
+        <div class="story-content">
+          <h2>Chapter 3: Implementation</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 1.5rem">
+            Modern browsers provide the Intersection Observer API for detecting
+            when elements enter the viewport:
+          </p>
+
+          <div
+            style="
+              background: rgba(0, 0, 0, 0.3);
+              padding: 2rem;
+              border-radius: 8px;
+              margin: 2rem 0;
+            "
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </span>
-      </a>
-      {% endif %} {% endif %} {% endfor %}
-    </div>
-  </div>
+            <pre
+              style="color: #e0e0e0; overflow-x: auto"
+            ><code>// Observe elements as they scroll into view
+const observer = new IntersectionObserver((entries) =&gt; {
+  entries.forEach(entry =&gt; {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+// Observe all sections
+document.querySelectorAll('[data-observe]')
+  .forEach(section =&gt; observer.observe(section));</code></pre>
+          </div>
+
+          <div class="interactive-cards">
+            <div class="card">
+              <h4>✅ Pros</h4>
+              <p>
+                • Highly engaging<br />• Guides user attention<br />• Great for
+                data stories<br />• Memorable experiences
+              </p>
+            </div>
+            <div class="card">
+              <h4>⚠️ Cons</h4>
+              <p>
+                • Can be heavy on resources<br />• Requires more dev time<br />•
+                May confuse some users<br />• Needs good UX design
+              </p>
+            </div>
+            <div class="card">
+              <h4>💡 Best For</h4>
+              <p>
+                • Product launches<br />• Data journalism<br />• Portfolio
+                showcases<br />• Educational content
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="final-section">
+        <div class="final-content">
+          <h2>The End... or Just the Beginning?</h2>
+          <p>
+            You've experienced scrollytelling firsthand. Now imagine using this
+            technique to tell your own stories—whether for a portfolio, a
+            product launch, or an educational project.
+          </p>
+          <button class="cta-button" onclick="scrollToTop()">Start Over</button>
+
+          <p style="margin-top: 3rem; font-size: 0.95rem; opacity: 0.8">
+            <strong>Atelier Reflection:</strong> How did scrolling change your
+            experience of this story? Was it more engaging than reading a static
+            page? Consider how you might use progressive disclosure in your own
+            projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-overlay">
+        <div>
+          Scroll Progress: <strong><span id="progress">0</span>%</strong>
+        </div>
+      </div>
+
+      <script>
+        // Intersection Observer for scroll-triggered animations
+        const observerOptions = {
+          threshold: 0.2,
+          rootMargin: "0px 0px -100px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        }, observerOptions);
+
+        // Observe all sections with data-observe attribute
+        document.querySelectorAll("[data-observe]").forEach((section) => {
+          observer.observe(section);
+        });
+
+        // Scroll progress indicator
+        function updateProgress() {
+          const windowHeight = window.innerHeight;
+          const documentHeight = document.documentElement.scrollHeight;
+          const scrollTop = window.scrollY;
+          const scrollPercent =
+            (scrollTop / (documentHeight - windowHeight)) * 100;
+
+          document.getElementById("progress").textContent =
+            Math.round(scrollPercent);
+        }
+
+        window.addEventListener("scroll", updateProgress);
+        updateProgress();
+
+        // Scroll to top function
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+
+        // Add smooth scroll behavior
+        document.documentElement.style.scrollBehavior = "smooth";
+      </script>
+    </body>
+  </body>
 </html>
