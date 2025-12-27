@@ -78,29 +78,44 @@
           </p>
 
           <div class="interactive-cards">
-            <div class="card">
-              <h4></h4>
+            <div class="glass-card">
+              <h4>
+                <img
+                  src="https://ik.imagekit.io/j4sminez03/Portfolio/icon%20photoshop.png"
+                  alt="Photoshop"
+                />
+                <img src="https://ik.imagekit.io/j4sminez03/Portfolio/icon%20illustrator.png" alt="Illustrator"/>
+                <img src="https://ik.imagekit.io/j4sminez03/Portfolio/icon%20indesign.png?updatedAt=1766860829903"/>
+              
+              </h4>
               <p>
-                Elements appear as they enter the viewport, creating a sense of
-                discovery.
+                Adobe Photoshop and Adobe Illustrator are the main tools I use
+                for ilustrating and making graphics. I also work with Adobe
+                InDesign for designing books or some editorial's proyects.
               </p>
             </div>
-            <div class="card">
-              <h4>Parallax</h4>
+            <div class="glass-card">
+              <h4>
+                <img
+                  src="https://ik.imagekit.io/j4sminez03/Portfolio/icon%20after%20effects%20final.png?updatedAt=1766838417912"
+                  alt="After Effects"
+                />
+                <img
+                  src="https://ik.imagekit.io/j4sminez03/Portfolio/icon%20premiere.png?updatedAt=1766839978577"   
+                  alt="Premiere Pro"
+                />
+              </h4>
               <p>
-                Different layers move at different speeds, creating depth and
-                dimension.
+                Adobe After Effects is my main tool for making motion graphics videos and Premiere Pro for video editing.
               </p>
             </div>
-            <div class="card">
-              <h4>Triggered Animations</h4>
-              <p>Actions occur when users reach specific scroll positions.</p>
+            <div class="glass-card">
+              <h4>
+                <img src="https://ik.imagekit.io/j4sminez03/Portfolio/maxon%204d%20cinema.png?updatedAt=1766840732684"/>
+              </h4>
+              <p>I work with Maxon Cinema 4D for 3D modeling and animation.</p>
             </div>
           </div>
-
-          <p style="margin-top: 2rem">
-            These techniques work together to create a cohesive narrative flow.
-          </p>
         </div>
       </div>
 
@@ -150,64 +165,6 @@
                   be seen by the world.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="story-section chapter-3" data-observe="">
-        <div class="story-content">
-          <h2>Chapter 3: Implementation</h2>
-          <p style="font-size: 1.2rem; margin-bottom: 1.5rem">
-            Modern browsers provide the Intersection Observer API for detecting
-            when elements enter the viewport:
-          </p>
-
-          <div
-            style="
-              background: rgba(0, 0, 0, 0.3);
-              padding: 2rem;
-              border-radius: 8px;
-              margin: 2rem 0;
-            "
-          >
-            <pre
-              style="color: #e0e0e0; overflow-x: auto"
-            ><code>// Observe elements as they scroll into view
-const observer = new IntersectionObserver((entries) =&gt; {
-  entries.forEach(entry =&gt; {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.2 });
-
-// Observe all sections
-document.querySelectorAll('[data-observe]')
-  .forEach(section =&gt; observer.observe(section));</code></pre>
-          </div>
-
-          <div class="interactive-cards">
-            <div class="card">
-              <h4>✅ Pros</h4>
-              <p>
-                • Highly engaging<br />• Guides user attention<br />• Great for
-                data stories<br />• Memorable experiences
-              </p>
-            </div>
-            <div class="card">
-              <h4>⚠️ Cons</h4>
-              <p>
-                • Can be heavy on resources<br />• Requires more dev time<br />•
-                May confuse some users<br />• Needs good UX design
-              </p>
-            </div>
-            <div class="card">
-              <h4>💡 Best For</h4>
-              <p>
-                • Product launches<br />• Data journalism<br />• Portfolio
-                showcases<br />• Educational content
-              </p>
             </div>
           </div>
         </div>

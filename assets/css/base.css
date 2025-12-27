@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #920000 0%, #ff0073 100%);
   text-align: center;
   padding: 2rem;
 }
@@ -92,7 +92,7 @@ body {
 
 /* Artwork */
 .chapter-1 {
-  background: linear-gradient(135deg, #2c3e50, #34495e);
+  background: linear-gradient(135deg, #a80000, #0d0808);
 }
 
 .chapter-1 h2 {
@@ -103,32 +103,13 @@ body {
 
 /* Chapter 2 - The Challenge */
 .chapter-2 {
-  background: linear-gradient(135deg, #c0392b, #8e44ad);
+  background: linear-gradient(135deg, #ec004f, #901fc1);
 }
 
 .chapter-2 h2 {
   color: #ffffff;
   font-size: clamp(2rem, 5vw, 3.5rem);
   margin-bottom: 1rem;
-}
-
-/* Chapter 3 - The Solution */
-.chapter-3 {
-  background: linear-gradient(135deg, #27ae60, #2ecc71);
-}
-
-.chapter-3 h2 {
-  color: #2ecc71;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  margin-bottom: 1rem;
-}
-
-/* Animated numbers */
-.stat-display {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
 }
 
 .stat-item {
@@ -169,7 +150,7 @@ body {
 /* Parallax image section */
 .parallax-section {
   height: 60vh;
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23667eea;stop-opacity:1" /><stop offset="100%" style="stop-color:%23764ba2;stop-opacity:1" /></linearGradient></defs><rect fill="url(%23grad)" width="1200" height="600"/><circle cx="600" cy="300" r="200" fill="white" opacity="0.1"/><circle cx="300" cy="400" r="150" fill="white" opacity="0.05"/><circle cx="900" cy="200" r="180" fill="white" opacity="0.08"/></svg>');
+  background-image: url(https://ik.imagekit.io/j4sminez03/Portfolio/skelet%C3%A1%20background.png?updatedAt=1766840729981);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -237,7 +218,7 @@ body {
 }
 
 .card h4 {
-  color: #3498db;
+  color: #ffffff;
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
 }
@@ -256,7 +237,7 @@ body {
   transform: translateX(-50%);
   width: 2px;
   height: 100%;
-  background: linear-gradient(to bottom, #3498db, #9b59b6, #e74c3c);
+  background: linear-gradient(to bottom, #ff0077, #7e00b0, #427eff);
 }
 
 .timeline-item {
@@ -292,19 +273,19 @@ body {
 }
 
 .timeline-content h4 {
-  color: #3498db;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .timeline-dot {
   width: 20px;
   height: 20px;
-  background: #3498db;
+  background: #de0064;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 0 0 4px rgba(171, 0, 0, 0.443);
 }
 
 /* Final CTA section */
@@ -313,7 +294,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ad00c7 0%, #2700d6 100%);
   text-align: center;
   padding: 2rem;
 }
