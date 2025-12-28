@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #920000 0%, #ff0073 100%);
+  background-image: url(https://ik.imagekit.io/j4sminez03/Portfolio/background%20gif.gif?updatedAt=1766840729123);
   text-align: center;
   padding: 2rem;
 }
@@ -150,7 +150,7 @@ body {
 /* Parallax image section */
 .parallax-section {
   height: 60vh;
-  background-image: url(https://ik.imagekit.io/j4sminez03/Portfolio/skelet%C3%A1%20background.png?updatedAt=1766840729981);
+  background-image: url(https://ik.imagekit.io/j4sminez03/Portfolio/gif%20skelet%C3%A1.gif?updatedAt=1766840730461);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -294,7 +294,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #ad00c7 0%, #2700d6 100%);
+  background-image: url(https://ik.imagekit.io/j4sminez03/Portfolio/background%20gif.gif?updatedAt=1766840729123);
   text-align: center;
   padding: 2rem;
 }
