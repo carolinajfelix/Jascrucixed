@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Jascrucixed - Portfolio</title>
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/base.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,5 +13,102 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <div class="story-section chapter-2" data-observe="">
+      <div class="story-content">
+        <h2>Audiovisual Design and Ilustration (UDIT)</h2>
+
+        <div class="interactive-cards">
+          <div class="glass-card">
+            <h4>
+              <img
+                src="https://ik.imagekit.io/j4sminez03/Portfolio/gif%20the%20substance.gif"
+              />
+            </h4>
+            <h4 style="font-size: 1.2rem; line-height: 1.8"></h4>
+            <h4>The Substance - Motion Graphics Spot</h4>
+            <p>
+              Made in 2024 with Adobe Illustrator for the graphics, I used Adobe
+              Premiere Pro of the audio edit and in the end Adobe After Effects
+              for the animation.
+            </p>
+          </div>
+          <div class="glass-card">
+            <h4>
+              <img
+                src="https://ik.imagekit.io/j4sminez03/Portfolio/skelet%C3%A1%20gif%20chiquito.gif"
+              />
+            </h4>
+            <h4 style="font-size: 1.2rem; line-height: 1.8"></h4>
+            <h4>Skeletá short 3D film</h4>
+            <p>
+              Made in 2025 with Maxon Cinema 4K for the 3D modeling and animation, I used
+              Adobe Premiere Pro for the audio edit and in the end Adobe After
+              Effects for the final compositing.
+            </p>
+          </div>
+           <div class="glass-card">
+            <h4>
+              <img
+                src="https://ik.imagekit.io/j4sminez03/Portfolio/skelet%C3%A1%20gif%20chiquito.gif"
+              />
+            </h4>
+            <h4 style="font-size: 1.2rem; line-height: 1.8"></h4>
+            <h4>Skeletá short 3D film</h4>
+            <p>
+              Made in 2025 with Maxon Cinema 4K for the 3D modeling and animation, I used
+              Adobe Premiere Pro for the audio edit and in the end Adobe After
+              Effects for the final compositing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Intersection Observer for scroll-triggered animations
+      const observerOptions = {
+        threshold: 0.2,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      // Observe all sections with data-observe attribute
+      document.querySelectorAll("[data-observe]").forEach((section) => {
+        observer.observe(section);
+      });
+
+      // Scroll progress indicator
+      function updateProgress() {
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const scrollTop = window.scrollY;
+        const scrollPercent =
+          (scrollTop / (documentHeight - windowHeight)) * 100;
+
+        document.getElementById("progress").textContent =
+          Math.round(scrollPercent);
+      }
+
+      window.addEventListener("scroll", updateProgress);
+      updateProgress();
+
+      // Scroll to top function
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      // Add smooth scroll behavior
+      document.documentElement.style.scrollBehavior = "smooth";
+    </script>
+  </body>
 </html>
