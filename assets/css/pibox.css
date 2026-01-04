@@ -27,7 +27,7 @@ body {
   justify-content: center;
   background-image: url(https://ik.imagekit.io/j4sminez03/Portfolio/background%20gif.gif?updatedAt=1766840729123);
   text-align: center;
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 
 .hero h1 {
@@ -80,7 +80,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   position: relative;
   opacity: 0;
   transform: translateY(50px);
