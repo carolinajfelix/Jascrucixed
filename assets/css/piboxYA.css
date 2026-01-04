@@ -25,9 +25,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(https://ik.imagekit.io/j4sminez03/Portfolio/background%20gif.gif?updatedAt=1766840729123);
-  text-align: center;
-  padding: 1rem 2rem;
+  background-image: url(https://ik.imagekit.io/j4sminez03/PIBOX%20fondo.jpg?updatedAt=1766840730711);
 }
 
 .hero h1 {
@@ -80,7 +78,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 2rem;
+  padding: 4rem 2rem;
   position: relative;
   opacity: 0;
   transform: translateY(50px);
@@ -98,9 +96,20 @@ body {
   position: relative;
 }
 
+/* Artwork */
+.chapter-1 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/Pibox%20Introduccion%20pag%201.jpg?updatedAt=1766840730521);
+}
+
+.chapter-1 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
 /* Chapter 2 - The Challenge */
 .chapter-2 {
-  background: linear-gradient(135deg, #ab0078, #1500ff);
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%202.png?updatedAt=1766840730634);
 }
 
 .chapter-2 h2 {
@@ -142,6 +151,38 @@ body {
 .stat-label {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
+}
+
+/* Parallax image section */
+.parallax-section {
+  height: 60vh;
+  background-image: url(https://ik.imagekit.io/j4sminez03/Portfolio/gif%20skelet%C3%A1.gif?updatedAt=1766840730461);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.parallax-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.parallax-content {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding: 2rem;
+}
+
+.parallax-content h3 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
 }
 
 /* Interactive elements */
@@ -187,6 +228,114 @@ body {
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
 }
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+  margin: 3rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #ff0077, #7e00b0, #427eff);
+}
+
+.timeline-item {
+  display: flex;
+  margin: 3rem 0;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.visible .timeline-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.timeline-item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.timeline-item:nth-child(3) {
+  transition-delay: 0.5s;
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1;
+  margin: 0 2rem;
+}
+
+.timeline-content h4 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background: #de0064;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 4px rgba(171, 0, 0, 0.443);
+}
+
+/* Final CTA section */
+.final-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://ik.imagekit.io/j4sminez03/Portfolio/background%20gif.gif?updatedAt=1766840729123);
+  text-align: center;
+  padding: 2rem;
+}
+
+.final-content h2 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.final-content p {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.cta-button {
+  background: rgb(49, 0, 0);
+  color: #ffffff;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
 /* Info overlay */
 .info-overlay {
   position: fixed;
@@ -342,41 +491,3 @@ body {
   font-weight: 700;
   font-style: normal;
 }
-/* Interactive glass button */
-.glass-button {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 12px;
-  padding: 1rem 2rem;
-  color: rgb(255, 255, 255);
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-block;
-  margin-top: 1rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.glass-button:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
-}
-
-/* Info section with glass */
-.info-section {
-  max-width: 1000px;
-  margin: 3rem auto;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(20px);
-  border-radius: 24px;
-  padding: 3rem;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.8);
-}
-
-/* Raleway font utility classes */
-/* <weight>: Use a value from 100 to 900 */
-/* <uniquifier>: Use a unique and descriptive class name */
