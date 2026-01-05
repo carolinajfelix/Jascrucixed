@@ -130,6 +130,96 @@ body {
   transform: scale(1);
 }
 
+.chapter-3 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/page%203.png?updatedAt=1766840730791);
+}
+
+.chapter-3 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-4 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%204.jpg?updatedAt=1766840730931);
+}
+
+.chapter-4 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-5 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%205.jpg?updatedAt=1766840731081);
+}
+
+.chapter-5 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-6 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%206.jpg?updatedAt=1766840731211);
+}
+
+.chapter-6 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-7 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%207.jpg?updatedAt=1766840731341);
+}
+
+.chapter-7 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-8 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%208.jpg?updatedAt=1766840731471);
+}
+
+.chapter-8 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-9 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%209.jpg?updatedAt=1766840731601);
+}
+
+.chapter-9 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-10 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2010.jpg?updatedAt=1766840731731);
+}
+
+.chapter-10 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-11 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2011.jpg?updatedAt=1766840731861);
+}
+
+.chapter-11 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
 .stat-item:nth-child(1) {
   transition-delay: 0.2s;
 }
@@ -151,38 +241,6 @@ body {
 .stat-label {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
-}
-
-/* Parallax image section */
-.parallax-section {
-  height: 60vh;
-  background-image: url(https://ik.imagekit.io/j4sminez03/Portfolio/gif%20skelet%C3%A1.gif?updatedAt=1766840730461);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.parallax-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.parallax-content {
-  text-align: center;
-  color: white;
-  z-index: 2;
-  padding: 2rem;
-}
-
-.parallax-content h3 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 1rem;
 }
 
 /* Interactive elements */
@@ -227,71 +285,6 @@ body {
   color: #ffffff;
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
-}
-
-/* Timeline */
-.timeline {
-  position: relative;
-  padding: 2rem 0;
-  margin: 3rem 0;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(to bottom, #ff0077, #7e00b0, #427eff);
-}
-
-.timeline-item {
-  display: flex;
-  margin: 3rem 0;
-  position: relative;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.visible .timeline-item {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.timeline-item:nth-child(1) {
-  transition-delay: 0.1s;
-}
-.timeline-item:nth-child(2) {
-  transition-delay: 0.3s;
-}
-.timeline-item:nth-child(3) {
-  transition-delay: 0.5s;
-}
-
-.timeline-content {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 1.5rem;
-  border-radius: 8px;
-  flex: 1;
-  margin: 0 2rem;
-}
-
-.timeline-content h4 {
-  color: #ffffff;
-  margin-bottom: 0.5rem;
-}
-
-.timeline-dot {
-  width: 20px;
-  height: 20px;
-  background: #de0064;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  box-shadow: 0 0 0 4px rgba(171, 0, 0, 0.443);
 }
 
 /* Final CTA section */
