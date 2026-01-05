@@ -220,6 +220,156 @@ body {
   margin-bottom: 1rem;
 }
 
+.chapter-12 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2012.jpg?updatedAt=1766840731991);
+}
+
+.chapter-12 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-13 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2013.jpg?updatedAt=1766840732121);
+}
+
+.chapter-13 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-14 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2014.jpg?updatedAt=1766840732251);
+}
+
+.chapter-14 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-15 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2015.jpg?updatedAt=1766840732381);
+}
+
+.chapter-15 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-16 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2016.jpg?updatedAt=1766840732511);
+}
+
+.chapter-16 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-17 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2017.jpg?updatedAt=1766840732641);
+}
+
+.chapter-17 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-18 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2018.jpg?updatedAt=1766840732771);
+}
+
+.chapter-18 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-19 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2019.jpg?updatedAt=1766840732901);
+}
+
+.chapter-19 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-20 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2020.jpg?updatedAt=1766840733031);
+}
+
+.chapter-20 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-21 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2021.jpg?updatedAt=1766840733161);
+}
+
+.chapter-21 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-22 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2022.jpg?updatedAt=1766840733291);
+}
+
+.chapter-22 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-23 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2023.jpg?updatedAt=1766840733421);
+}
+
+.chapter-23 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-24 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2024.jpg?updatedAt=1766840733551);
+}
+
+.chapter-24 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-25 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2025.jpg?updatedAt=1766840733681);
+}
+
+.chapter-25 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.chapter-26 {
+  background-image: url(https://ik.imagekit.io/j4sminez03/pag%2026.jpg?updatedAt=1766840733811);
+}
+
+.chapter-26 h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
 .stat-item:nth-child(1) {
   transition-delay: 0.2s;
 }
