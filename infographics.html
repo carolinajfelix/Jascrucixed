@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jascrucixed - Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/infographics.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="story-section chapter-2" data-observe="">
+      <div class="story-content">
+        <h2>Projects I did on UDIT! (2024-Present)</h2>
+
+        <div class="story-gallery">
+          <h3>Ghost Album Ranking</h3>
+          <img
+            src="https://ik.imagekit.io/j4sminez03/ghost%20album%20ranking.jpg"
+          />
+
+          <h3>New Yorker Poster</h3>
+          <img src="https://ik.imagekit.io/j4sminez03/dina%20poster.jpg" />
+
+          <h3>Scream Movie Ranking</h3>
+          <img
+            src="https://ik.imagekit.io/j4sminez03/scream%20movie%20ranking%20finale.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      // Intersection Observer for scroll-triggered animations
+      const observerOptions = {
+        threshold: 0.2,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      // Observe all sections with data-observe attribute
+      document.querySelectorAll("[data-observe]").forEach((section) => {
+        observer.observe(section);
+      });
+
+      // Scroll progress indicator
+      function updateProgress() {
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const scrollTop = window.scrollY;
+        const scrollPercent =
+          (scrollTop / (documentHeight - windowHeight)) * 100;
+
+        document.getElementById("progress").textContent =
+          Math.round(scrollPercent);
+      }
+
+      window.addEventListener("scroll", updateProgress);
+      updateProgress();
+
+      // Scroll to top function
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      // Add smooth scroll behavior
+      document.documentElement.style.scrollBehavior = "smooth";
+    </script>
+  </body>
+</html>
